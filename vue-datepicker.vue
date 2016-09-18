@@ -27,6 +27,7 @@ exports.default = {
           week: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
           month: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
           format: 'YYYY-MM-DD',
+          classCSS: 'form-control',
           color: {
             checked: '#F50057',
             header: '#3f51b5',
@@ -788,7 +789,7 @@ table {
       <input
       type="text"
       title="input date"
-      class="cov-datepicker"
+      class="cov-datepicker {{option.classCSS}}"
       readonly="readonly"
       placeholder="{{option.placeholder}}"
       v-model="time"
